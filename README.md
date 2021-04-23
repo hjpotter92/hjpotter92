@@ -1,3 +1,3 @@
 -
 
-![Metrics](https://github.com/hjpotter92/hjpotter92/blob/master/github-metrics.svg)
+![Metrics](https://raw.githubusercontent.com/hjpotter92/hjpotter92/master/github-metrics.svg)
