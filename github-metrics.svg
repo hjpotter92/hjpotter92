@@ -1943,7 +1943,7 @@ but I was wondering if there was some other way of invoking the function (if it 
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="100.77603844095637 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="100.78000569977168 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2199,7 +2199,7 @@ but I was wondering if there was some other way of invoking the function (if it 
                   Influencer
                   
                     <span class="gh">
-                      ranked 99.6k out of 70m users
+                      ranked 99.7k out of 70m users
                     </span>
                   
                 </div>
@@ -2519,7 +2519,7 @@ but I was wondering if there was some other way of invoking the function (if it 
             </section>
             <footer>
                 <span>These metrics include private contributions, timezone Asia/Calcutta</span>
-                <span>Last updated Mon, 26 Apr 2021 12:04:46 GMT with lowlighter/metrics@3.8.0-beta</span>
+                <span>Last updated Mon, 26 Apr 2021 13:11:53 GMT with lowlighter/metrics@3.8.0-beta</span>
             </footer>
             <div id="metrics-end"></div>
         </div>
