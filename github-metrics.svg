@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2593" class="">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="2314" class="">
     <defs>
         <style/>
     </defs>
@@ -1125,6 +1125,17 @@
     overflow: hidden;
   }
 
+/* Code snippet */
+  .snippet .body {
+    padding-left: 12px;
+  }
+  .snippet.additions {
+    color: #336543;
+  }
+  .snippet.deletions {
+    color: #9A5256;
+  }
+
 /* Markdown and syntax highlighting */
   .markdown b, .markdown i {
     display: inline-block;
@@ -1143,6 +1154,15 @@
     white-space: pre-wrap;
     width: 97%;
     margin-top: 4px;
+  }
+  span.code {
+    background-color: #7777771F;
+    padding: 1px 5px;
+    font-size: 80%;
+    border-radius: 6px;
+    color: #777777;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    margin: 0 4px -3px;
   }
   .token.comment {
     color: #669900;
@@ -1164,7 +1184,27 @@
   }
   .token.trimmed {
     font-style: italic;
-    color: #77777760
+    color: #77777760;
+  }
+  .token.coord {
+    color: #D2A8FF;
+    font-weight: bold;
+  }
+  .token.inserted:not(.prefix) {
+    color: #AAD0B4DC;
+    background-color: #336543DC;
+  }
+  .token.deleted:not(.prefix) {
+    color: #EED2D0DC;
+    background-color: #9A5256DC;
+  }
+
+/* Typography */
+  .space {
+    margin-left: 7px;
+  }
+  .blue {
+    color: #58a6ff;
   }
 
 /* Charts */
@@ -1420,7 +1460,7 @@
                                 <div class="field ">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"/></svg>
                   
-                    49 views in last two weeks
+                    47 views in last two weeks
                   
                 </div>
                             </section>
@@ -1576,7 +1616,7 @@
                     <section class="largeable-column-fields">
                         <div class="field">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M8.5.75a.75.75 0 00-1.5 0v5.19L4.391 3.33a.75.75 0 10-1.06 1.061L5.939 7H.75a.75.75 0 000 1.5h5.19l-2.61 2.609a.75.75 0 101.061 1.06L7 9.561v5.189a.75.75 0 001.5 0V9.56l2.609 2.61a.75.75 0 101.06-1.061L9.561 8.5h5.189a.75.75 0 000-1.5H9.56l2.61-2.609a.75.75 0 00-1.061-1.06L8.5 5.939V.75z"/></svg>
-            72705 reputation points
+            72725 reputation points
           </div>
                         <div class="field">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"/></svg>
@@ -1590,7 +1630,7 @@
                     <section class="largeable-column-fields">
                         <div class="field">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M3.637 2.291A.75.75 0 014.23 2h7.54a.75.75 0 01.593.291l3.48 4.5a.75.75 0 01-.072.999l-7.25 7a.75.75 0 01-1.042 0l-7.25-7a.75.75 0 01-.072-.999l3.48-4.5zM4.598 3.5L1.754 7.177 8 13.207l6.246-6.03L11.402 3.5H4.598z"/></svg>
-            329 badges
+            330 badges
           </div>
                         <div class="field">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM0 8a8 8 0 1116 0A8 8 0 010 8zm11.78-1.72a.75.75 0 00-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l4.5-4.5z"/></svg>
@@ -1675,21 +1715,8 @@ As found on sitepoint discussion.
                           </div>
                                     </div>
                                     <div class="body markdown">
-                        <i>
-Dates in the <code>m/d/y</code> or <code>d-m-y</code> formats are disambiguated by looking
-at the separator between the various components: if the separator is a
-slash (<code>/</code>), then the American <code>m/d/y</code> is assumed; whereas if the
-separator is a dash (<code>-</code>) or a dot (<code>.</code>), then the European <code>d-m-y</code>
-format is assumed. Check more here.
-</i>
-Use the default date function.
-<code class="language-multiline">$var = "20/04/2012";
-echo date("Y-m-d", strtotime($var) );</code>
-EDIT I just tested it, and somehow, PHP doesn't work well with dd/mm/yyyy format. Here's another solution.
-<code class="language-multiline">$var = '20/04/2012';
-$date = str_replace('/', '-', $var);
-<span class="token trimmed">(1 more line was trimmed)</span></code>
-
+                        An error occurred:code.replace is not a function
+Please report this to https://github.com/markedjs/marked.
                       </div>
                                     <div class="infos">
                                         <div>
@@ -1743,29 +1770,8 @@ $date = str_replace('/', '-', $var);
                           </div>
                                     </div>
                                     <div class="body markdown">
-                        I define the server class as follows (redacted):
-<code class="language-multiline">class server:
-    def __init__( self, ip = "", port = 0 ):
-<span class="token trimmed">(63 more lines were trimmed)</span></code>
-where, the send and receive functions are as follows:
-<code class="language-multiline">def send( channel, message ):
-    try:
-<span class="token trimmed">(16 more lines were trimmed)</span></code>
-The <code>client</code> class is pretty simple (redacted):
-<code class="language-multiline">class client:
-    def __init__( self, name, srvIP, srvPort ):
-<span class="token trimmed">(29 more lines were trimmed)</span></code>
-What happens is, my client objects <code>receive</code> the <code>Welcome</code> and <code>ID</code> message simultaneously. This throws an exception as follows:
-<code class="language-multiline">$ client.py
-Connected to 10.109.1.92:7777.
-<span class="token trimmed">(13 more lines were trimmed)</span></code>
-That is, the client receives the following as a single string:
-<i>
-<code>"Welcome!"["ID", 0]</code>
-</i>
-which raises an error in <code>json.loads</code>.
-Is there some method to introduce any sort of delay between the messages?
-
+                        An error occurred:code.replace is not a function
+Please report this to https://github.com/markedjs/marked.
                       </div>
                                     <div class="infos">
                                         <div>
@@ -1811,14 +1817,8 @@ Is there some method to introduce any sort of delay between the messages?
                           </div>
                                     </div>
                                     <div class="body markdown">
-                        Let's say I have:
-<code class="language-multiline">function x {
-    echo "x"
-<span class="token trimmed">(2 more lines were trimmed)</span></code>
-Now, I can simply use <code>eval</code> as follows:
-<code>eval $call_func</code>
-but I was wondering if there was some other way of invoking the function (if it exists) whose name is stored in the variable: <code>call_func</code>.
-
+                        An error occurred:code.replace is not a function
+Please report this to https://github.com/markedjs/marked.
                       </div>
                                     <div class="infos">
                                         <div>
@@ -1942,7 +1942,7 @@ but I was wondering if there was some other way of invoking the function (if it 
                                     </defs>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="gauge info">
                                         <circle class="gauge-base" r="25" cx="28" cy="28"/>
-                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="57.321355236139624 155"/>
+                                        <circle class="gauge-arc" transform="rotate(-90 28 28)" r="25" cx="28" cy="28" stroke-dasharray="57.36379192334019 155"/>
                                     </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" mask="url(#mask)">
                                         <g xmlns="http://www.w3.org/2000/svg" transform="translate(5 4)" fill="none" fill-rule="evenodd">
@@ -2005,7 +2005,7 @@ but I was wondering if there was some other way of invoking the function (if it 
                   <span class="prefix">Super</span> developer
                   
                     <span class="gh">
-                      ranked 273k out of 76m users
+                      ranked 274k out of 76m users
                     </span>
                   
                   
@@ -2639,7 +2639,7 @@ but I was wondering if there was some other way of invoking the function (if it 
             </section>
             <footer>
                 <span>These metrics include private contributions</span>
-                <span>Last updated 13/09/2021, 06:40 (timezone Asia/Calcutta) with lowlighter/metrics@3.14.0-beta</span>
+                <span>Last updated 14/09/2021, 06:41 (timezone Asia/Calcutta) with lowlighter/metrics@3.14.0-beta</span>
             </footer>
         </div>
         <div xmlns="http://www.w3.org/1999/xhtml" id="metrics-end"></div>
